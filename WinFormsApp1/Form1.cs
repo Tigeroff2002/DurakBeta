@@ -19,7 +19,7 @@ namespace WinFormsApp1
         int n_koloda;
         bool koloda_empty;
         Bitmap[] img = new Bitmap[37];
-        picture[] pictures = new picture[40];
+        picture[] pictures = new picture[46];
         bool[] img_pos = new bool[36];
         Random rnd = new Random();
         Queue queue = new Queue();
@@ -205,7 +205,7 @@ namespace WinFormsApp1
                                 button2.Visible = false;
                             }
                     }
-                }
+                }       
                 else
                 {
                     for (int i = 1; i < n_pictures; i++)
@@ -355,7 +355,7 @@ namespace WinFormsApp1
                 for (int i = 34 + h; i < 40 + h; i++)
                     if ((this.Controls.Find("pictureBox" + i, true).First() as PictureBox).Image != null) n_b += 1;
                 n_b1 = n_b;
-                for (int i = 7 + h; i < 13 + h; i++)
+                for (int i = 7 +  h; i < 13 + h; i++)
                 {
                     if (((this.Controls.Find("pictureBox" + i, true).First() as PictureBox).Visible == false) && (n_b == 0))
                     {
